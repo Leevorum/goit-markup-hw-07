@@ -3,6 +3,7 @@
   border-bottom: 1px solid #ececec;
 }
 .navigation {
+  display: flex;
   align-items: center;
 }
 .current::after {
@@ -16,7 +17,10 @@
   border-radius: 2px;
   background-color: var(--background-accent);
 }
-
+.main-navigation {
+  display: flex;
+  @extend .list;
+}
 .main-navigation .nav-link.current {
   color: var(--text-accent-color);
 }
@@ -26,6 +30,8 @@
 }
 
 .contacts-navigation {
+  display: flex;
+  @extend .list;
   margin-left: auto;
 }
 .contacts {

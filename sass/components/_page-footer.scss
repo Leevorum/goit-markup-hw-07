@@ -43,30 +43,26 @@
 .socials-footer {
   margin-left: 70px;
 }
-.socials-footer .team-social-link {
+.socials-footer .socials-list__link {
   background: rgba(255, 255, 255, 0.1);
   color: var(--mainbackground);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials-footer .team-social-link:hover,
-.socials-footer .team-social-link:focus {
+.socials-footer .socials-list__link:hover,
+.socials-footer .socials-list__link:focus {
   background: var(--background-accent);
 }
 .footer-baseline {
   align-items: baseline;
 }
 
-.sign-form {
+.form-container {
   margin-left: 93px;
 }
-.sign-btn {
+.sign-form {
   display: flex;
-  align-items: center;
-  margin-left: 12px;
-  padding-left: 29px;
-  padding-right: 28px;
 }
-.sign-email {
+.sign-form__email {
   background-color: var(--second-background-color);
   width: 358px;
   height: 50px;
@@ -76,10 +72,14 @@
   box-sizing: border-box;
   color: var(--third-background-color);
 }
-.sign-center {
+.sign-form__btn {
   display: flex;
   align-items: center;
+  margin-left: 12px;
+  padding-left: 29px;
+  padding-right: 28px;
 }
+
 .sign-svg {
   margin-left: 10px;
 }

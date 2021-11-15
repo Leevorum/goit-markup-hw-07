@@ -1,9 +1,10 @@
-.team-social {
+.socials-list {
   display: flex;
   align-items: center;
   justify-content: center;
+  @extend .list;
 }
-.team-social-link {
+.socials-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,15 +15,15 @@
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-social-icon {
+.socials-list__icon {
   fill: currentColor;
 }
 
-.team-social .item-social + .item-social {
+.socials-list__item:not(:first-child) {
   margin-left: 10px;
 }
-.team-social-link:hover,
-.team-social-link:focus {
+.socials-list__link:hover,
+.socials-list__link:focus {
   background: var(--background-accent);
   color: var(--mainbackground);
 }

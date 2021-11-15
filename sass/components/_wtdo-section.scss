@@ -1,12 +1,15 @@
 /* what we do */
-
-.working .item {
+.works {
+  display: flex;
+  @extend .list;
+}
+.works__card {
   position: relative;
 }
-.working .item + .item {
+.works__card:not(:first-child) {
   margin-left: 30px;
 }
-.working-overlay {
+.works__overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,13 +19,12 @@
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
 }
-.overlay-item {
+.works__overlay-item {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--mainbackground);
 }
