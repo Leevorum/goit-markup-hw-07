@@ -1,0 +1,26 @@
+/* advantages */
+
+.advantages-text {
+  font-size: var(--main-font-size);
+  line-height: 1.71;
+  color: var(--text-secondary-color);
+}
+.advantages .item {
+  width: 270px;
+}
+.advantages .item + .item {
+  margin-left: 30px;
+}
+.advantages-icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.advantages-icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--third-background-color);
+}

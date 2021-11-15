@@ -1,0 +1,43 @@
+/* webstudio nav*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.nav-section {
+  align-items: center;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--background-accent);
+}
+
+.main-nav .nav-link.current {
+  color: var(--text-accent-color);
+}
+
+.main-nav .item + .item {
+  margin-left: 50px;
+}
+
+.contacts-nav {
+  margin-left: auto;
+}
+.contacts {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-secondary-color);
+}
+
+.contacts-nav .item + .item {
+  margin-left: 50px;
+}
+.contacts-link-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

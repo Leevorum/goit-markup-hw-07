@@ -1,0 +1,28 @@
+/* regular customers */
+.regular-customers .customer-item {
+  width: 170px;
+  height: 92px;
+}
+.customer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  color: var(--background-icon);
+  border: 1px solid var(--background-icon);
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customer-icon {
+  fill: currentColor;
+}
+.customer-item + .customer-item {
+  margin-left: 30px;
+}
+.customer-links:hover,
+.customer-links:focus {
+  color: var(--background-accent);
+  border: 1px solid var(--background-accent);
+}

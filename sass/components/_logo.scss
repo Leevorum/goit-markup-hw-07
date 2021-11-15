@@ -1,0 +1,18 @@
+.nav-logo {
+  display: block;
+  margin-right: 93px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.173;
+  color: var(--text-primary-color);
+  text-decoration: none;
+}
+
+/* .nav-logo:hover, */
+.nav-logo:focus {
+  color: var(--text-accent-color);
+}
+.logo-color {
+  color: var(--text-accent-color);
+}
