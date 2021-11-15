@@ -2,7 +2,7 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
-.nav-section {
+.navigation {
   align-items: center;
 }
 .current::after {
@@ -17,15 +17,15 @@
   background-color: var(--background-accent);
 }
 
-.main-nav .nav-link.current {
+.main-navigation .nav-link.current {
   color: var(--text-accent-color);
 }
 
-.main-nav .item + .item {
+.main-navigation__item:not(:first-child) {
   margin-left: 50px;
 }
 
-.contacts-nav {
+.contacts-navigation {
   margin-left: auto;
 }
 .contacts {
@@ -34,10 +34,10 @@
   color: var(--text-secondary-color);
 }
 
-.contacts-nav .item + .item {
+.contacts-navigation__item:not(:first-child) {
   margin-left: 50px;
 }
-.contacts-link-icon {
+.contacts-navigation__icon {
   margin-right: 10px;
   fill: currentColor;
 }

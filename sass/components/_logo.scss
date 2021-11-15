@@ -1,4 +1,4 @@
-.nav-logo {
+.logo {
   display: block;
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
@@ -9,10 +9,10 @@
   text-decoration: none;
 }
 
-/* .nav-logo:hover, */
-.nav-logo:focus {
+/* .logo:hover, */
+.logo:focus {
   color: var(--text-accent-color);
 }
-.logo-color {
+.logo__color {
   color: var(--text-accent-color);
 }
