@@ -502,56 +502,56 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
+          <h2 class="modal__header">Оставьте свои данные, мы вам перезвоним</h2>
           <form name="modal-form">
             <div class="label-container">
               <label for="modal-name">
-                <span class="modal-label">Имя</span>
+                <span class="modal__label">Имя</span>
               </label>
               <input
-                class="modal-input"
+                class="modal__input"
                 type="text"
                 name="name"
                 id="modal-name"
               />
-              <svg class="form-svg" width="18px" height="18px">
+              <svg class="modal__svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
             <div class="label-container">
               <label for="modal-phone">
-                <span class="modal-label">Телефон</span>
+                <span class="modal__label">Телефон</span>
               </label>
               <input
-                class="modal-input"
+                class="modal__input"
                 type="tel"
                 name="phone"
                 id="modal-phone"
               />
-              <svg class="form-svg" width="18px" height="18px">
+              <svg class="modal__svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
             <div class="label-container">
               <label for="modal-mail">
-                <span class="modal-label">Почта</span>
+                <span class="modal__label">Почта</span>
               </label>
               <input
-                class="modal-input"
+                class="modal__input"
                 type="email"
                 name="mail"
                 id="modal-mail"
               />
-              <svg class="form-svg" width="18px" height="18px">
+              <svg class="modal__svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
             <div class="label-container">
               <label for="comment-modal"
-                ><span class="modal-label">Комментарий</span></label
+                ><span class="modal__label">Комментарий</span></label
               >
               <textarea
-                class="area-comments"
+                class="modal__area-comments"
                 name="comment"
                 rows="3"
                 id="comment-modal"
@@ -562,7 +562,7 @@
                 type="checkbox"
                 name="modal-license"
                 id="modal-license"
-                class="modal-check"
+                class="modal__check"
               />
               <svg class="checkbox-svg" width="16px" height="15px">
                 <use href="./images/icons.svg#icon-modal-checkbox"></use>
@@ -583,29 +583,33 @@
     </main>
     <!-- footer -->
     <footer class="footer-nav">
-      <div class="container flex footer-baseline">
+      <div class="container flex footer-nav__baseline">
         <div>
-          <a class="logo footer-margin" href="./"
+          <a class="logo footer-nav__margin" href="./"
             ><span class="logo__color">Web</span
-            ><span class="footer-logo">Studio</span></a
+            ><span class="footer-nav__logo">Studio</span></a
           >
           <address>
-            <span class="footer-text">г. Киев, пр-т Леси Украинки, 26</span>
-            <ul class="footer-contacts list">
-              <li class="item">
-                <a class="nav-link footer-links" href="mailto:info@example.com"
+            <span class="footer-nav__adress"
+              >г. Киев, пр-т Леси Украинки, 26</span
+            >
+            <ul class="footer-contacts">
+              <li class="footer-contacts__item">
+                <a
+                  class="nav-link footer-nav__links"
+                  href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="item">
-                <a class="nav-link footer-links" href="tel:+380961111111"
+              <li class="footer-contacts__item">
+                <a class="nav-link footer-nav__links" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="socials-footer">
+        <div class="footer-socials">
           <p class="join-us">присоединяйтесь</p>
           <ul class="socials-list">
             <li class="socials-list__item">
@@ -637,7 +641,7 @@
         <div class="form-container">
           <p class="join-us">Подпишитесь на рассылку</p>
           <div>
-            <form name="sign" class="sign-form flex">
+            <form name="sign" class="sign-form">
               <input
                 class="sign-form__email"
                 type="email"
@@ -645,7 +649,7 @@
                 name="email"
               />
               <button type="submit" class="main-btn sign-form__btn">
-                <span class="sign-btn-text">Подписаться</span
+                <span>Подписаться</span
                 ><svg class="sign-form__svg" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
