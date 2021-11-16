@@ -5,10 +5,11 @@
 }
 .advantages__item {
   width: 270px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
-.advantages__item:not(:first-child) {
-  margin-left: 30px;
-}
+
 .advantages__icon {
   background-repeat: no-repeat;
   background-size: cover;
