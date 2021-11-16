@@ -20,30 +20,28 @@
 .main-navigation {
   display: flex;
   @extend .list;
-}
-.main-navigation .nav-link.current {
-  color: var(--text-accent-color);
-}
-
-.main-navigation__item:not(:first-child) {
-  margin-left: 50px;
+  .nav-link.current {
+    color: var(--text-accent-color);
+  }
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
 }
 
 .contacts-navigation {
   display: flex;
   @extend .list;
   margin-left: auto;
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
 }
-.contacts {
+.contacts-navigation__link {
   display: inline-flex;
   align-items: center;
   color: var(--text-secondary-color);
-}
-
-.contacts-navigation__item:not(:first-child) {
-  margin-left: 50px;
-}
-.contacts-navigation__icon {
-  margin-right: 10px;
-  fill: currentColor;
 }

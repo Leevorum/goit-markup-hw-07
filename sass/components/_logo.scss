@@ -7,12 +7,10 @@
   line-height: 1.173;
   color: var(--text-primary-color);
   text-decoration: none;
-}
-
-/* .logo:hover, */
-.logo:focus {
-  color: var(--text-accent-color);
-}
-.logo__color {
-  color: var(--text-accent-color);
+  &:focus {
+    color: var(--text-accent-color);
+  }
+  &__color {
+    color: var(--text-accent-color);
+  }
 }
