@@ -3,7 +3,7 @@
 .label-container {
   position: relative;
 }
-.label-container + .label-container {
+.label-container:not(:first-child) {
   margin-top: 28px;
 }
 .modal__label {
