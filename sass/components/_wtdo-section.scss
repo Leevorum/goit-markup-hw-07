@@ -21,7 +21,7 @@
   background: rgba(47, 48, 58, 0.8);
 }
 .works__overlay-item {
-  font-family: "Roboto";
+  font-family: var(--main-font-family);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
